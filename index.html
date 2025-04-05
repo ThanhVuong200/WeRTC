@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VideoCall - Kết nối video trực tuyến</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-page">
+  <header class="header">
+    <h1>VideoCall</h1>
+    <p>Kết nối video trực tuyến nhanh chóng và dễ dàng</p>
+  </header>
+  
+  <div class="container">
+    <div class="actions">
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h2>Tạo phòng mới</h2>
+        <p>Tạo phòng gọi video mới và mời bạn bè tham gia bằng cách chia sẻ liên kết</p>
+        <button id="createRoomBtn" class="btn">Tạo phòng ngay</button>
+      </div>
+      
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-sign-in-alt"></i>
+        </div>
+        <h2>Tham gia phòng</h2>
+        <p>Tham gia phòng gọi video hiện có bằng mã phòng được chia sẻ</p>
+        <button id="joinRoomToggle" class="btn">Tham gia phòng</button>
+        <div class="join-form" id="joinForm">
+          <input type="text" class="form-control" id="roomId" placeholder="Nhập mã phòng">
+          <button id="joinRoomBtn" class="btn">Tham gia ngay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="welcome.js"></script>
+</body>
+</html>
